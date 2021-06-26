@@ -11,9 +11,23 @@ main {
   margin: 100px auto 0;
   width: 1120px;
 }
-
+.grid {
+  display: grid;
+  grid-row-gap: 24px;
+}
+.first-row {
+  display: grid;
+  grid-template-columns: 872px 424px;
+  grid-column-gap: 24px;
+}
+.second-row {
+  display: grid;
+  grid-template-columns: repeat(3, 424px);
+  grid-column-gap: 24px;
+}
 .card-big {
-  background: url("../img/Car.png");
+  background: url("../img/Car.png") center center no-repeat;
+  background-size: cover;
 
   min-height: 540px;
   display: flex;
