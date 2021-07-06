@@ -13,17 +13,8 @@ main {
 }
 .grid {
   display: grid;
-  grid-row-gap: 24px;
-}
-.first-row {
-  display: grid;
-  grid-template-columns: 872px 424px;
-  grid-column-gap: 24px;
-}
-.second-row {
-  display: grid;
-  grid-template-columns: repeat(3, 424px);
-  grid-column-gap: 24px;
+  grid-gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .card-big {
   background: url("../img/Car.png") center center no-repeat;
@@ -34,6 +25,7 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   padding: 30px;
+  grid-column: 1/3;
 }
 .card-big p {
   font-family: "Raleway", sans-serif;
@@ -54,7 +46,6 @@ main {
   line-height: 35px;
   text-transform: uppercase;
   margin-left: 20px;
-  width: 448px;
 
   color: #ffffff;
 }
