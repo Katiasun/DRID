@@ -3,16 +3,73 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: #e5e5e5;
+.wrapper {
+  padding: 100px;
+  /* Когда есть  падинг то картинки накладыватся друг на друга в gallery-1 */
+  background: wheat;
+  max-width: 100%;
 }
 .gallery-1 {
-  padding: 100px;
-  background-color: antiquewhite;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 54px;
 }
+.gallery-1-first_level {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 54px;
+}
+.gallery-1-first_level > img {
+  max-width: 100%;
+}
+.big-card {
+  grid-column: 1/3;
+  grid-gap: 54px;
+}
+.first_small-cards {
+  display: grid;
+  grid-gap: 54px;
+}
+
+.gallery-1-second_level {
+  display: grid;
+}
+.three-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 54px;
+}
+.three-cards > img {
+  max-width: 100%;
+}
+
+/* GALLERY-2 */
 .gallery-2 {
   display: grid;
+  padding-top: 100px;
+}
+.gallery-2-first_level {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.gallery-2-first_level > img {
+  max-width: 100%;
+}
+.gallery-2-first_level img {
+  filter: brightness(50%);
+}
+.gallery-2-first_level img:hover {
+  filter: brightness(100%);
+}
+.gallery-2-second_level {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.gallery-2-second_level img {
+  filter: brightness(50%);
+}
+.gallery-2-second_level img:hover {
+  filter: brightness(100%);
+}
+img {
+  cursor: pointer;
 }
