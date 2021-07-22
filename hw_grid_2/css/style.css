@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid {
+}
+.gallery {
+  display: grid;
+}
+.gallery--first {
+  padding: 100px;
+  display: grid;
+  grid-gap: 54px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.big {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.gallery--second {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.gallery--second img {
+  filter: brightness(50%);
+}
+.gallery--second img:hover {
+  filter: brightness(100%);
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
